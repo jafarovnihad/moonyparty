@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Watch Party Extension | Downloads</title>
+    <title>Watch Party | Download Center</title>
     <style>
-        body { font-family: sans-serif; background: #121212; color: white; text-align: center; padding: 50px; }
-        .card { background: #1e1e1e; padding: 30px; border-radius: 15px; display: inline-block; border: 1px solid #333; }
-        .btn { background: #e50914; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
-        .btn:hover { background: #ff0a16; }
-        .version { color: #888; margin-top: 10px; font-size: 0.9em; }
-        code { background: #000; padding: 2px 5px; color: #4dff88; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f0f0f; color: #e0e0e0; text-align: center; padding: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .card { background: #1a1a1a; padding: 30px; border-radius: 12px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px; }
+        
+        h1 { color: #e50914; margin-bottom: 5px; }
+        .status-badge { background: #2e7d32; color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.7em; vertical-align: middle; margin-left: 10px; text-transform: uppercase; }
+        
+        .btn { background: #e50914; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; display: inline-block; transition: 0.2s; border: none; cursor: pointer; }
+        .btn:hover { background: #ff0a16; transform: translateY(-2px); }
+        
+        .history-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; background: #1a1a1a; border-radius: 8px; overflow: hidden; }
+        .history-table th, .history-table td { padding: 12px; border-bottom: 1px solid #333; }
+        .history-table th { background: #252525; color: #888; font-size: 0.8em; text-transform: uppercase; }
+        .history-table tr:last-child td { border-bottom: none; }
+        .history-table a { color: #54b3ff; text-decoration: none; font-weight: bold; }
+        .history-table a:hover { text-decoration: underline; }
+
+        .setup-box { background: #000; padding: 20px; border-radius: 8px; text-align: left; font-size: 0.85em; color: #bbb; border-left: 4px solid #e50914; }
+        code { color: #4dff88; font-family: monospace; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Watch Party Extension</h1>
-        <p>Sync HBO & YouTube with the crew.</p>
-        
-        <a href="watch-party-v1.zip" class="btn">Download Extension (v1.1)</a>
-        
-        <div class="version">Last updated: Jan 20, 2026</div>
-        <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
-        <p style="text-align: left; font-size: 0.8em;">
-            <strong>Quick Setup:</strong><br>
-            1. Download and Unzip.<br>
+    <div class="container">
+        <h1>Watch Party Pro</h1>
+        <p>Private Sync for HBO & YouTube</p>
+
+        <div class="card">
+            <h2>Latest Release <span class="status-badge">Stable</span></h2>
+            <p>v1.2 - Fixed HBO UI and Next Episode Sync</p>
+            <a href="watch-party-v1-2.zip" class="btn">Download v1.2 (Latest)</a>
+            <p style="font-size: 0.8em; color: #666; margin-top: 15px;">Released: Jan 20, 2026</p>
+        </div>
+
+        <h3>Version History</h3>
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Changes</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>v1.1</td>
+                    <td>Added Nicknames & Chat Spacing</td>
+                    <td><a href="watch-party-v1-1.zip">Download Zip</a></td>
+                </tr>
+                <tr>
+                    <td>v1.0</td>
+                    <td>Initial Base Release</td>
+                    <td><a href="watch-party-v1-0.zip">Download Zip</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <div class="setup-box">
+            <strong>How to Update:</strong><br>
+            1. Download the latest Zip and <b>unzip/extract</b> it.<br>
             2. Go to <code>chrome://extensions</code><br>
-            3. Turn on <b>Developer Mode</b>.<br>
-            4. Click <b>Load Unpacked</b> and select the folder.
-        </p>
+            3. Find the old "Watch Party" and click <b>Remove</b>.<br>
+            4. Click <b>Load Unpacked</b> and select the new folder.
+        </div>
     </div>
 </body>
 </html>
